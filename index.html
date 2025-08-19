@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MathSnap — Privacy Policy</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial;line-height:1.6;color:#0b1220;margin:0;background:#f7f9fc}
+    .container{max-width:900px;margin:48px auto;padding:28px;background:#fff;border-radius:12px;box-shadow:0 6px 24px rgba(11,18,32,0.08)}
+    h1{font-size:28px;margin:0 0 8px}
+    p.lead{color:#334155}
+    h2{margin-top:22px}
+    code{background:#f1f5f9;padding:2px 6px;border-radius:6px}
+    footer{margin-top:28px;font-size:0.9rem;color:#475569}
+    .meta{font-size:0.95rem;color:#64748b}
+    a{color:#0b5fff}
+  </style>
+</head>
+<body>
+  <main class="container" role="main">
+    <h1>MathSnap — Privacy Policy</h1>
+    <p class="meta">Last updated: <strong>[Insert Date]</strong></p>
+
+    <p class="lead">MathSnap is a lightweight browser extension that converts LaTeX math formulas into PNG images. This privacy policy explains what (if any) data the extension collects, how it is used, and what control you have over it.</p>
+
+    <h2>Data Collection</h2>
+    <p>MathSnap does not collect, store, or share personal information about its users. The extension performs LaTeX rendering and PNG export locally within your browser.</p>
+
+    <h2>Local Rendering & Clipboard</h2>
+    <p>All LaTeX-to-PNG rendering is performed locally by the extension code included in the package. The extension requests the <code>clipboardWrite</code> permission so that users can copy rendered images or LaTeX code to their clipboard when they choose. MathSnap <strong>does not read</strong> data from the clipboard.</p>
+
+    <h2>Optional AI Assist (User-controlled)</h2>
+    <p>MathSnap offers an optional AI Assist feature that converts plain-text math or informal notation into LaTeX. This feature is <strong>disabled by default</strong>. If you enable it, MathSnap will send conversion requests directly to the Google Gemini API endpoint (<code>https://generativelanguage.googleapis.com/*</code>) using the API key you provide. These API requests are made from your browser to Google and are not proxied or stored by MathSnap's developer servers.</p>
+
+    <h2>Third-Party Services</h2>
+    <p>No analytics, advertising, telemetry, or third-party tracking services are included in MathSnap. The only external network requests possible are those you explicitly trigger by enabling the optional AI Assist feature.</p>
+
+    <h2>Security</h2>
+    <p>MathSnap does not execute remote JavaScript or WebAssembly. All functionality is delivered within the extension package and does not rely on loading external scripts at runtime.</p>
+
+    <h2>User Control & Data Removal</h2>
+    <p>Because MathSnap does not collect or store personal data, there is no user data retained by the extension developer to remove. If you wish to revoke network access for AI Assist, disable the feature in the extension options and remove any API keys you stored locally.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this privacy policy or MathSnap’s behavior, contact the developer at: <a href="mailto:YOUR-EMAIL@example.com">YOUR-EMAIL@example.com</a>. Replace this email before publishing.</p>
+
+    <footer>
+      <p>By using MathSnap you acknowledge that you have read and understood this privacy policy.</p>
+    </footer>
+  </main>
+</body>
+</html>
