@@ -19,9 +19,9 @@
 <body>
   <main class="container" role="main">
     <h1>MathSnap — Privacy Policy</h1>
-    <p class="meta">Last updated: <strong>19 August, 2025</strong></p>
+    <p class="meta">Last updated: <strong>30 August, 2025</strong></p>
 
-    <p class="lead">MathSnap is a lightweight browser extension that converts LaTeX math formulas into PNG images. This privacy policy explains what (if any) data the extension collects, how it is used, and what control you have over it.</p>
+    <p class="lead">MathSnap is a lightweight browser extension that converts LaTeX math formulas into PNG images. This privacy policy explains what data the extension collects, how it is used, and what control you have over it.</p>
 
     <h2>Data Collection</h2>
     <p>MathSnap does not collect, store, or share personal information about its users. The extension performs LaTeX rendering and PNG export locally within your browser.</p>
@@ -30,16 +30,17 @@
     <p>All LaTeX-to-PNG rendering is performed locally by the extension code included in the package. The extension requests the <code>clipboardWrite</code> permission so that users can copy rendered images or LaTeX code to their clipboard when they choose. MathSnap <strong>does not read</strong> data from the clipboard.</p>
 
     <h2>Optional AI Assist (User-controlled)</h2>
-    <p>MathSnap offers an optional AI Assist feature that converts plain-text math or informal notation into LaTeX. This feature is <strong>disabled by default</strong>. If you enable it, MathSnap will send conversion requests directly to the Google Gemini API endpoint (<code>https://generativelanguage.googleapis.com/*</code>) using the API key you provide. These API requests are made from your browser to Google and are not proxied or stored by MathSnap's developer servers.</p>
+    <p>MathSnap offers an optional AI Assist feature that converts plain-text math or informal notation into LaTeX. This feature is <strong>disabled by default</strong>. If you enable it, MathSnap will send your input text or image to MathSnap’s secure backend service (running on AWS Lambda), which then communicates with the Google Gemini API (<code>https://generativelanguage.googleapis.com/*</code>) to perform the conversion.</p>
+    <p>No personal data is stored by MathSnap’s servers. Requests are processed in real-time and discarded after conversion.</p>
 
     <h2>Third-Party Services</h2>
-    <p>No analytics, advertising, telemetry, or third-party tracking services are included in MathSnap. The only external network requests possible are those you explicitly trigger by enabling the optional AI Assist feature.</p>
+    <p>No analytics, advertising, telemetry, or third-party tracking services are included in MathSnap. The only external network requests possible are those triggered when you use the AI Assist feature, which are sent first to MathSnap’s backend (AWS Lambda) and then to Google Gemini for processing.</p>
 
     <h2>Security</h2>
-    <p>MathSnap does not execute remote JavaScript or WebAssembly. All functionality is delivered within the extension package and does not rely on loading external scripts at runtime.</p>
+    <p>MathSnap does not execute remote JavaScript or WebAssembly. All functionality is delivered within the extension package. AI Assist requests are transmitted securely (HTTPS) and processed without long-term storage.</p>
 
     <h2>User Control & Data Removal</h2>
-    <p>Because MathSnap does not collect or store personal data, there is no user data retained by the extension developer to remove. If you wish to revoke network access for AI Assist, disable the feature in the extension options and remove any API keys you stored locally.</p>
+    <p>You can enable or disable the AI Assist feature at any time in the extension options. Since MathSnap does not store personal data, there is no user data retained that requires removal.</p>
 
     <h2>Contact</h2>
     <p>If you have questions about this privacy policy or MathSnap’s behavior, contact the developer at: <a href="mailto:sagarzendex@gmail.com">sagarzendex@gmail.com</a>.</p>
