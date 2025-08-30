@@ -30,11 +30,11 @@
     <p>All LaTeX-to-PNG rendering is performed locally by the extension code included in the package. The extension requests the <code>clipboardWrite</code> permission so that users can copy rendered images or LaTeX code to their clipboard when they choose. MathSnap <strong>does not read</strong> data from the clipboard.</p>
 
     <h2>Optional AI Assist (User-controlled)</h2>
-    <p>MathSnap offers an optional AI Assist feature that converts plain-text math or informal notation into LaTeX. This feature is <strong>disabled by default</strong>. If you enable it, MathSnap will send your input text or image to MathSnap’s secure backend service (running on AWS Lambda), which then communicates with the Google Gemini API (<code>https://generativelanguage.googleapis.com/*</code>) to perform the conversion.</p>
+    <p>MathSnap offers an optional AI Assist feature that converts plain-text math or informal notation into LaTeX. This feature is <strong>disabled by default</strong>. If you enable it, MathSnap will send your input text or image to MathSnap’s secure backend service.</p>
     <p>No personal data is stored by MathSnap’s servers. Requests are processed in real-time and discarded after conversion.</p>
 
     <h2>Third-Party Services</h2>
-    <p>No analytics, advertising, telemetry, or third-party tracking services are included in MathSnap. The only external network requests possible are those triggered when you use the AI Assist feature, which are sent first to MathSnap’s backend (AWS Lambda) and then to Google Gemini for processing.</p>
+    <p>No analytics, advertising, telemetry, or third-party tracking services are included in MathSnap. The only external network requests possible are those triggered when you use the AI Assist feature, which are sent first to MathSnap’s backend.</p>
 
     <h2>Security</h2>
     <p>MathSnap does not execute remote JavaScript or WebAssembly. All functionality is delivered within the extension package. AI Assist requests are transmitted securely (HTTPS) and processed without long-term storage.</p>
